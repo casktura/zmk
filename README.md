@@ -11,3 +11,11 @@ Check out the website to learn more: https://zmk.dev/
 You can also come join our [ZMK Discord Server](https://zmk.dev/community/discord/invite)
 
 To review features, check out the [feature overview](https://zmk.dev/docs/). ZMK is under active development, and new features are listed with the [enhancement label](https://github.com/zmkfirmware/zmk/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement) in GitHub. Please feel free to add 👍 to the issue description of any requests to upvote the feature.
+
+# Scripts to build and flash
+
+```bash
+west update
+west build --pristine -b bluemicro840_v1 -- -DSHIELD=blanckle
+west flash --runner nrfjprog
+```
