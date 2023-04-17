@@ -15,6 +15,7 @@ To review features, check out the [feature overview](https://zmk.dev/docs/). ZMK
 # Scripts to build and flash
 
 ```bash
+.\.venv\Scripts\Activate.ps1
 west update
 west build --pristine -b bluemicro840_v1 -- -DSHIELD=blanckle
 west flash --runner nrfjprog
